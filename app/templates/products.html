@@ -1,0 +1,278 @@
+{% extends "base.html" %}
+{% block content %}
+    <section class="main-content">
+  <header>
+    <div class="row show-for-medium-up">
+      <div class="columns">
+        <ul class="breadcrumb">
+          <li><a href="/">Home</a></li>
+          <li><a href="/collections">Collections</a></li>  <li><a href="/collections/featured-products">Featured Products</a></li>
+          <li>Long grain white rice</li>
+        </ul>
+      </div>
+    </div>
+    <div class="previous-next row">
+
+      <div class="previous columns large-3 small-6">
+        <a class="left" title="Previous Product" href="/collections/featured-products/products/rococo-sea-salt-wafers"><span aria-hidden="true" class="glyph arrow-left"></span> Previous Item</a>
+        <div class="border-decoration show-for-large-up"></div>
+      </div>
+
+      <div class="next columns large-3 large-offset-6 small-6">
+        <a class="right" title="Next Product" href="/collections/featured-products/products/austin-east-ciders-gold-top">Next Item <span aria-hidden="true" class="glyph arrow-right"></span></a>
+        <div class="border-decoration show-for-large-up"></div>
+      </div>
+    </div>
+  </header>
+
+  <article class="row">
+
+{#    <!-- small screens -->#}
+{#    <div class="positions show-for-large-up">#}
+{#      <div class="columns large-3">#}
+{#        <div data-position="title-vendor"></div>#}
+{#        <div data-position="prices"></div>#}
+{#        <div data-position="cart-form"></div>#}
+{#        <div data-position="thumbs" class="text-center"></div>#}
+{#      </div>#}
+{#      <div class="columns large-6">#}
+{#        <div data-position="photos"></div>#}
+{#      </div>#}
+{#      <div class="columns large-3">#}
+{#        <div data-position="description"></div>#}
+{#      </div>#}
+{#    </div>#}
+{##}
+{#    <div class="positions show-for-medium-only">#}
+{#      <div class="columns large-6">#}
+{#        <div data-position="title-vendor"></div>#}
+{#        <div data-position="thumbs" class="text-center"></div>#}
+{#        <div data-position="cart-form"></div>#}
+{#        <div data-position="description"></div>#}
+{#        <div data-position="prices"></div>#}
+{#      </div>#}
+{#      #}
+{#      </div>#}
+{#      <div class="columns large-6">#}
+{#        <div data-position="photos"></div>#}
+{#      </div>#}
+{#      #}
+{#    </div>#}
+{##}
+{#    <div class="positions show-for-small columns">#}
+{#      <div data-position="title-vendor"></div>#}
+{#      <div data-position="prices"></div>#}
+{#      <div data-position="photos"></div>#}
+{#      <div data-position="thumbs" class="text-center"></div>#}
+{#      <div data-position="cart-form"></div>#}
+{#      <div data-position="description"></div>#}
+{#    </div>#}
+
+    <div class="positions js">
+      <div class="columns large-6">
+        <div data-position="title-vendor">
+          <h1 class="page-title" itemprop="name">Long grain white rice</h1>
+          <h2 class="vendor" itemprop="brand"><a href="" title="">The Deli Co</a></h2>
+        </div>
+
+        <div data-position="prices">
+          <div class="prices">
+            <div itemprop="offers" itemscope="" itemtype="">
+              <p>
+                <span class="actual-price money" itemprop="price" data-currency-usd="$9.28 USD" data-currency="USD">$9.28 USD</span>
+                &nbsp;
+                <span class="compare-price"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div data-position="cart-form">
+          <form class="cart-form custom" action="" method="post">
+            <div class="variants hidden">
+
+              <div class="selector-wrapper">
+                <label for="variant-listbox-option-0">Size</label>
+                <select class="single-option-selector" data-option="option1" id="variant-listbox-option-0">
+                  <option value="small">small</option>
+                </select>
+              </div>
+
+              <div class="selector-wrapper">
+                <label for="variant-listbox-option-1">Material</label>
+                <select class="single-option-selector" data-option="option2" id="variant-listbox-option-1">
+                  <option value="Packet">Packet</option>
+                </select>
+              </div>
+
+              <select id="variant-listbox" name="id" class="medium hidden-field" data-id="1450630510077-Dh0dt" style="display: none;">
+                <option data-sku="" selected="selected" value="393795832">small / Packet - $12.95</option>
+              </select>
+
+              <div class="custom dropdown medium" data-id="1450630510077-Dh0dt" style="display: none;">
+                <a href="#" class="current">small / Packet - $12.95</a>
+                <a href="#" class="selector"></a>
+                <ul>
+                  <li class="selected">small / Packet - $12.95</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="quanity-cart-row clearfix">
+
+              <div class="quantity">
+                <label for="quantity">Quantity</label>
+                <input id="quantity" type="number" name="quantity" min="1" value="1">
+              </div>
+
+              <div class="add-to-cart">
+                <input type="submit" name="add" id="add" value="Add to Cart" class="purchase button">
+              </div>
+            </div>
+          </form>
+          <div class="product-unavailable" style="display: none;">
+            <p class="error">This product is currently sold out.</p>
+          </div>
+        </div>
+        <div data-position="thumbs">
+          <div class="thumbs">
+          </div>
+        </div>
+
+        <div data-position="description">
+          <div class="description">
+            <div itemprop="description" class="rte-content">
+              <div class="tabs-wrapper horizontal">
+                <ul class="tabs-horizontal headings">
+                  <li class= 'active'>
+                    <div class="trigger">Description<div class="bg"></div></div>
+                  </li>
+                  <li>
+                    <div class="trigger">About Tabs<div class="bg"></div></div>
+                  </li>
+                </ul>
+
+                <ul class="tabs content">
+                  <li class= 'active'>
+                    <p>Mighty rice is available in two varieties, taking flavour and quality from the volcanic soil, clean air and pure rainwater of Mauritius. It comes in 15oz and 500g re-sealable bags.<span class="slide txt_2i">There's long-grain white rice with its delicate flavour and tempting fragrance. Or long-grain brown rice, which has the same delicious grains but keeps its outer bran layer for a nutty flavour and more robust texture.</span></p>
+                  </li>
+                  <li>
+                    <p>If you require more detailed product descriptions, you can add tabs to any RTE (rich text editor) area in the theme for:
+                    </p>
+                    <blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"></blockquote>
+                    <span style="line-height: 1.2;">- Product description</span><br>
+                    <blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"></blockquote>
+                    <span style="line-height: 1.2;">- Collection description</span><br>
+                    <blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"></blockquote>
+                    <span style="line-height: 1.2;">- Pages</span><br>- Blog posts<br><br>For more information on using tabs, refer to the <strong><a href="http://blockshop-theme-deli.myshopify.com/pages/theme-documentation" target="_blank">theme documentation</a>.&nbsp;</strong>
+                    <p>&nbsp;</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+      <div class="columns large-6">
+        <div data-position="photos">
+          <div class="photos">
+            <div class="container clearfix" style="height: auto; width: auto; position: relative; overflow: hidden; outline-width: 0px;">
+              <a class="photo active" href="" data-zoom="" rel="gallery" data-image-id="346382162" style="display: inline;">
+                <img src="../static/assets/longgrainrice_medium.jpeg" alt="Long grain white rice">
+              </a>
+              <!-- <img src="assets/products.jpeg" class="zoomImg" style="position: absolute; top: -114.519px; left: -16.3715px; opacity: 0; width: 1024px; height: 1024px; border: none; max-width: none;"> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <!-- product slider -->
+
+
+  <div class="product-slider dark length--9">
+      <div class="row header">
+        <div class="columns">
+         <h2 class="font-headings clearfix">
+          <a href="#" title="">Featured Products</a></h2>
+        </div>
+      </div>
+
+      <div class="raw content">
+
+        <div id="owl-demo2" class="owl-carousel">
+
+          <div class="item">
+            <div class="product-item " style="display: block;">
+              <div class="image-wrapper" style="opacity: 1;">
+                <a href="#"><img class="hov" src="../static/assets/jpeg-2_medium.jpeg" alt="Owl Image"></a>
+              </div>
+              <div class="caption">
+                <p class="title"><a href="#">Rococo Sea Salt Wafers</a></p>
+                <p class="vendor"><a href="" title="">The Deli Co</a></p>
+                <p class="price"><span class="money" data-currency-cad="$12.95" data-currency-usd="$9.84 USD" data-currency="USD">$9.84 USD</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="product-item " style="display: block;">
+              <div class="image-wrapper" style="opacity: 1;">
+                <a href="#"><img src="../static/assets/jpeg-2_medium.jpeg" alt="Owl Image"></a>
+              </div>
+              <div class="caption">
+                <p class="title"><a href="#">Rococo Sea Salt Wafers</a></p>
+                <p class="vendor"><a href="" title="">The Deli Co</a></p>
+                <p class="price"><span class="money" data-currency-cad="$12.95" data-currency-usd="$9.84 USD" data-currency="USD">$9.84 USD</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="product-item " style="display: block;">
+              <div class="image-wrapper" style="opacity: 1;">
+                <a href="#"><img src="../static/assets/jpeg-2_medium.jpeg" alt="Owl Image"></a>
+              </div>
+              <div class="caption">
+                <p class="title"><a href="#">Rococo Sea Salt Wafers</a></p>
+                <p class="vendor"><a href="" title="">The Deli Co</a></p>
+                <p class="price"><span class="money" data-currency-cad="$12.95" data-currency-usd="$9.84 USD" data-currency="USD">$9.84 USD</span></p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="item">
+            <div class="product-item " style="display: block;">
+              <div class="image-wrapper" style="opacity: 1;">
+                <a href="#"><img src="../static/assets/jpeg-2_medium.jpeg" alt="Owl Image"></a>
+              </div>
+              <div class="caption">
+                <p class="title"><a href="#">Rococo Sea Salt Wafers</a></p>
+                <p class="vendor"><a href="" title="">The Deli Co</a></p>
+                <p class="price"><span class="money" data-currency-cad="$12.95" data-currency-usd="$9.84 USD" data-currency="USD">$9.84 USD</span></p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="item">
+            <div class="product-item " style="display: block;">
+              <div class="image-wrapper" style="opacity: 1;">
+                <a href="#"><img src="../static/assets/jpeg-2_medium.jpeg" alt="Owl Image"></a>
+              </div>
+              <div class="caption">
+                <p class="title"><a href="#">Rococo Sea Salt Wafers</a></p>
+                <p class="vendor"><a href="" title="">The Deli Co</a></p>
+                <p class="price"><span class="money" data-currency-cad="$12.95" data-currency-usd="$9.84 USD" data-currency="USD">$9.84 USD</span></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+</section>
+{% endblock %}
