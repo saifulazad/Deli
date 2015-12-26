@@ -10,7 +10,7 @@ from datetime import datetime
 #     user_id = db.Column(db.Integer,primary_key=True)
 #     user_email = db.Column(db.String(50),unique=True)
 #     user_fullName = db.Column(db.String(50))
-
+#
 
 #create Question model
 # class Question (db.Model):

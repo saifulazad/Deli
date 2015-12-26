@@ -9,9 +9,9 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 # for sqlite
 
-SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'our.db')
+SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'shop.db')
 
-
+#
 SECRET_KEY = 'Sm9obiBTY2hyb20ga2lja3MgYXNz'
 basedir = os.path.abspath(os.path.dirname(__file__))
 
