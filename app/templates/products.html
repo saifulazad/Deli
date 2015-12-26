@@ -71,7 +71,7 @@
     <div class="positions js">
       <div class="columns large-6">
         <div data-position="title-vendor">
-          <h1 class="page-title" itemprop="name">Long grain white rice</h1>
+          <h1 class="page-title" itemprop="name">{{ product.name }}</h1>
           <h2 class="vendor" itemprop="brand"><a href="" title="">The Deli Co</a></h2>
         </div>
 
@@ -79,7 +79,7 @@
           <div class="prices">
             <div itemprop="offers" itemscope="" itemtype="">
               <p>
-                <span class="actual-price money" itemprop="price" data-currency-usd="$9.28 USD" data-currency="USD">$9.28 USD</span>
+                <span class="actual-price money" itemprop="price" data-currency-usd="$9.28 USD" data-currency="USD">{{ product.price }}</span>
                 &nbsp;
                 <span class="compare-price"></span>
               </p>
@@ -154,9 +154,8 @@
 
                 <ul class="tabs content">
                   <li class= 'active'>
-                    <p>Mighty rice is available in two varieties, taking flavour and quality from the volcanic soil, clean air and pure rainwater of Mauritius. It comes in 15oz and 500g re-sealable bags.<span class="slide txt_2i">There's long-grain white rice with its delicate flavour and tempting fragrance. Or long-grain brown rice, which has the same delicious grains but keeps its outer bran layer for a nutty flavour and more robust texture.</span></p>
-                  </li>
-                  <li>
+                    <p>{{ product.description }}</p> </li>
+                {#  <li>
                     <p>If you require more detailed product descriptions, you can add tabs to any RTE (rich text editor) area in the theme for:
                     </p>
                     <blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"></blockquote>
@@ -166,7 +165,7 @@
                     <blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"></blockquote>
                     <span style="line-height: 1.2;">- Pages</span><br>- Blog posts<br><br>For more information on using tabs, refer to the <strong><a href="http://blockshop-theme-deli.myshopify.com/pages/theme-documentation" target="_blank">theme documentation</a>.&nbsp;</strong>
                     <p>&nbsp;</p>
-                  </li>
+                  </li>#}
                 </ul>
               </div>
             </div>

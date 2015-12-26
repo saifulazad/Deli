@@ -1,3 +1,4 @@
+import random
 from flask import render_template, request
 from wtforms.ext.sqlalchemy.orm import model_form
 from app import app
@@ -14,8 +15,8 @@ def login():
 
 @app.route('/products', methods=['GET', 'POST'])
 def products():
-    return render_template('products.html');
-
+    res = models.Product.query.order_by(models.Product.price)[0:50]
+    return render_template('products.html', product = res[random.randrange(0, 40)]);
 
 @app.route('/signup')
 def signup():

@@ -75,6 +75,16 @@ from datetime import datetime
 #     def check_password(self, password):
 #
 # 	    return password == self.password
+class Product(db.Model):
+
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(464))
+    description =db.Column(db.Text(464))
+    price = db.Column(db.Integer)
+   # created_at = models.DateTimeField('created_at', auto_now_add=True)
+   # modified_at = models.DateTimeField('modified_at', auto_now=True)
+    #likes = models.IntegerField(default=0)
+
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
