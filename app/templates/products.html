@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-    <section class="main-content">
+   <section class="main-content">
   <header>
     <div class="row show-for-medium-up">
       <div class="columns">
@@ -11,65 +11,26 @@
         </ul>
       </div>
     </div>
-    <div class="previous-next row">
 
-      <div class="previous columns large-3 small-6">
+
+    <div class="previous-next row">
+      <div class="previous col-md-6">
         <a class="left" title="Previous Product" href="/collections/featured-products/products/rococo-sea-salt-wafers"><span aria-hidden="true" class="glyph arrow-left"></span> Previous Item</a>
-        <div class="border-decoration show-for-large-up"></div>
       </div>
 
-      <div class="next columns large-3 large-offset-6 small-6">
+      <div class="next col-md-6">
         <a class="right" title="Next Product" href="/collections/featured-products/products/austin-east-ciders-gold-top">Next Item <span aria-hidden="true" class="glyph arrow-right"></span></a>
         <div class="border-decoration show-for-large-up"></div>
       </div>
     </div>
+
+
   </header>
 
   <article class="row">
+    <div class="positions">
+      <div class="col-sm-12 col-md-6 col-lg-4">
 
-{#    <!-- small screens -->#}
-{#    <div class="positions show-for-large-up">#}
-{#      <div class="columns large-3">#}
-{#        <div data-position="title-vendor"></div>#}
-{#        <div data-position="prices"></div>#}
-{#        <div data-position="cart-form"></div>#}
-{#        <div data-position="thumbs" class="text-center"></div>#}
-{#      </div>#}
-{#      <div class="columns large-6">#}
-{#        <div data-position="photos"></div>#}
-{#      </div>#}
-{#      <div class="columns large-3">#}
-{#        <div data-position="description"></div>#}
-{#      </div>#}
-{#    </div>#}
-{##}
-{#    <div class="positions show-for-medium-only">#}
-{#      <div class="columns large-6">#}
-{#        <div data-position="title-vendor"></div>#}
-{#        <div data-position="thumbs" class="text-center"></div>#}
-{#        <div data-position="cart-form"></div>#}
-{#        <div data-position="description"></div>#}
-{#        <div data-position="prices"></div>#}
-{#      </div>#}
-{#      #}
-{#      </div>#}
-{#      <div class="columns large-6">#}
-{#        <div data-position="photos"></div>#}
-{#      </div>#}
-{#      #}
-{#    </div>#}
-{##}
-{#    <div class="positions show-for-small columns">#}
-{#      <div data-position="title-vendor"></div>#}
-{#      <div data-position="prices"></div>#}
-{#      <div data-position="photos"></div>#}
-{#      <div data-position="thumbs" class="text-center"></div>#}
-{#      <div data-position="cart-form"></div>#}
-{#      <div data-position="description"></div>#}
-{#    </div>#}
-
-    <div class="positions js">
-      <div class="columns large-6">
         <div data-position="title-vendor">
           <h1 class="page-title" itemprop="name">Long grain white rice</h1>
           <h2 class="vendor" itemprop="brand"><a href="" title="">The Deli Co</a></h2>
@@ -130,15 +91,32 @@
               </div>
             </div>
           </form>
+
           <div class="product-unavailable" style="display: none;">
             <p class="error">This product is currently sold out.</p>
           </div>
         </div>
+
         <div data-position="thumbs">
           <div class="thumbs">
           </div>
         </div>
+      </div>
 
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div data-position="photos">
+          <div class="photos">
+            <div class="container clearfix" style="height: auto; width: auto; position: relative; overflow: hidden; outline-width: 0px;">
+              <a class="photo active" href="" data-zoom="" rel="gallery" data-image-id="346382162" style="display: inline;">
+                <img src="../static/assets/longgrainrice_medium.jpeg" alt="Long grain white rice">
+              </a>
+              <!-- <img src="assets/products.jpeg" class="zoomImg" style="position: absolute; top: -114.519px; left: -16.3715px; opacity: 0; width: 1024px; height: 1024px; border: none; max-width: none;"> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-4">
         <div data-position="description">
           <div class="description">
             <div itemprop="description" class="rte-content">
@@ -173,21 +151,6 @@
           </div>
         </div>
         </div>
-
-
-      <div class="columns large-6">
-        <div data-position="photos">
-          <div class="photos">
-            <div class="container clearfix" style="height: auto; width: auto; position: relative; overflow: hidden; outline-width: 0px;">
-              <a class="photo active" href="" data-zoom="" rel="gallery" data-image-id="346382162" style="display: inline;">
-                <img src="../static/assets/longgrainrice_medium.jpeg" alt="Long grain white rice">
-              </a>
-              <!-- <img src="assets/products.jpeg" class="zoomImg" style="position: absolute; top: -114.519px; left: -16.3715px; opacity: 0; width: 1024px; height: 1024px; border: none; max-width: none;"> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </article>
   <!-- product slider -->
 

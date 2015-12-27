@@ -24,7 +24,7 @@ $(document).ready(function() {
     $(".searchbar-open").click(function(){
           $(".menu").hide();
           //$(".searchbar").css({"display","none"});
-          $(".searchbar-container").show();
+          $(".searchbar-container").show(1000);
           
     });
 
@@ -65,29 +65,29 @@ $(document).ready(function() {
      //  console.log('hello');
      // }
 
-     $(window).resize(function(){
+    //  $(window).resize(function(){
 
-       if ($(window).width() <= 768) {
-        $('.positions').removeClass('js');
-        $('.positions').addClass('show-for-small');
-       } 
+    //    if ($(window).width() <= 768) {
+    //     $('.positions').removeClass('js');
+    //     $('.positions').addClass('show-for-small');
+    //    } 
 
-       else if($(window).width() <= 1280){
-        $('.positions').removeClass('js');
-        $('.positions').addClass('show-for-medium-only');
-        // $('.div').removeClass('positions show-for-medium-only');
-        // $('.positions').addClass('show-for-large-up');
-       }
+    //    else if($(window).width() <= 1280){
+    //     $('.positions').removeClass('js');
+    //     $('.positions').addClass('show-for-medium-only');
+    //     // $('.div').removeClass('positions show-for-medium-only');
+    //     // $('.positions').addClass('show-for-large-up');
+    //    }
 
-       else{
+    //    else{
 
-        $('.positions').removeClass('js');
-        $('.positions').addClass('positions show-for-large-up');
-        // $('.positions').removeClass('positions show-for-small');
-        // $('.positions').addClass('show-for-medium-only');
-       }
+    //     $('.positions').removeClass('js');
+    //     $('.positions').addClass('positions show-for-large-up');
+    //     // $('.positions').removeClass('positions show-for-small');
+    //     // $('.positions').addClass('show-for-medium-only');
+    //    }
 
-    });
+    // });
 
 });
 

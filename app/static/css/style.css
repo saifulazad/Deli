@@ -403,7 +403,7 @@ h2 {
     margin: 0 0 0.83333em;
 }
 
-.label {
+label {
     font-size: 1.16667em;
     color: #4d4d4d;
     cursor: pointer;
@@ -414,6 +414,10 @@ h2 {
     padding: 0 0 0 0;
 }
 
+article .quantity input {
+    font-size: 1em;
+    width: 70px;
+}
 
 
 input[type="text"], input[type="password"], input[type="email"] {
@@ -710,7 +714,7 @@ article .quantity {
 }
 article .add-to-cart .button {
     float: left;
-    margin: 0px 0 0 0;
+    margin: 12px 0 0 0;
     font-family: "lato";
     color: #ffffff;
     font-size: 1.16667em;
