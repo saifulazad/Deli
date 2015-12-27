@@ -7,7 +7,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 #SQLALCHEMY_DATABASE_URI = 'mysql://root:root@localhost:3306/test'
 #'sqlite:///sqlalchemy_example.db'
 
-# for sqlite
+
 
 SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'our.db')
 
