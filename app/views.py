@@ -12,10 +12,13 @@ def index():
 def login():
     return render_template('login.html');
 
-@app.route('/products', methods=['GET', 'POST'])
-def products():
-    return render_template('products.html');
+@app.route('/single_products', methods=['GET', 'POST'])
+def single_products():
+    return render_template('single_product.html');
 
+@app.route('/all_products', methods=['GET', 'POST'])
+def all_products():
+    return render_template('all_product.html');
 
 @app.route('/signup')
 def signup():

@@ -801,7 +801,60 @@ article .add-to-cart .button {
     cursor: pointer;
 }}
 
-.active{
-    display: block;
+.main-content .product-grid {
+    margin: 30px auto 0;
 }
 
+@media only screen and (min-width: 768px){.product-grid {
+    width: 100%;
+}}
+
+.product-grid .circle span {
+    max-width: 57px;
+    margin-left: 4px;
+    word-wrap: break-word;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.product-grid {
+    margin: 0 auto;
+    min-width: 290px;
+    padding: 0;
+    list-style: none;
+}
+.product-grid .product-item {
+    text-align: center;
+    float: none;
+    margin-bottom: 30px;
+}
+.product-item {
+    text-align: center;
+    float: none;
+    margin-bottom: 30px;
+}
+@media only screen and (min-width: 768px){.product-grid .product-item {
+    float: left;
+}}
+.product-grid .circle {
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    color: #f7f7f7;
+    background: #444444;
+    font-family: "lato";
+    font-size: 1em;
+    font-weight: 300;
+    padding: 0;
+    top: 5px;
+    right: 5px;
+    height: 65px;
+    width: 65px;
+}
