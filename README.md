@@ -7,7 +7,7 @@ This is a simple E-Commerce Application.This is Developed in Flask-A python micr
 
 ### Installation
 1. Be sure you have python 2.7.9 or above installed.
-2. Got to DIR Deli and run below command 
+2. Go to DIR Deli and run below command 
 ```sh
 $ python -m pip -r requirements.txt
 ```
