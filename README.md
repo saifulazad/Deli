@@ -1,4 +1,4 @@
-# Delli
+# Deli (Clone a Shopify theme)
 
 This is a simple E-Commerce Application.This is Developed in Flask-A python micro framework
 
@@ -6,9 +6,13 @@ This is a simple E-Commerce Application.This is Developed in Flask-A python micr
 1.0.0
 
 ### Installation
-Be sure you have python installed.
-Then run the configure.bat file.
-To start project enter below command to bash
+1. Be sure you have python 2.7.9 or above installed.
+2. Got to DIR Deli and run below command 
+```sh
+$ python -m pip -r requirements.txt
+```
+
+3. To start project enter below command to bash
 ```sh
 $ python run.py
 ```
