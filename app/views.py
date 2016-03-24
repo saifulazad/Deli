@@ -17,17 +17,8 @@ def login():
 
 @app.route('/signup')
 def signup():
-    MyForm = model_form(models.User, models.UserForm)
 
-    form = MyForm(request.form)
-    model = models.User()
-    if request.method == 'POST' and form.validate_on_submit():
-        form.populate_obj(model)
-
-        # model.put()
-        # flash("MyModel updated")
-        # return redirect(url_for("index"))
-    return render_template('signup.html', form=form);
+    return render_template('signup.html');
 
 
 @app.route('/single_products', methods=['GET', 'POST'])

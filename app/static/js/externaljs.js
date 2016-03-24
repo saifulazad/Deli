@@ -1,9 +1,11 @@
 
 $(document).ready(function() {
 
+    var x = 0;
+
 	$("#owl-demo").owlCarousel({
    
-        navigation : true, // Show next and prev buttons
+
         slideSpeed : 300,
         paginationSpeed : 400,
         singleItem:true,
@@ -40,16 +42,24 @@ $(document).ready(function() {
 
     $(".account-open").click(function(){
           $(".menu").hide();
-          //$(".searchbar").css({"display","none"});
-          $(".account-container").show();
+         // $(".account-container").show();
           
     });
 
-    $(".fa-bars").click(function(){
-        $(".mobile-menu").show();  
+    $(".bars").click(function(){
+
+            $(".mobile-menu").toggle(1000);
+
     });
 
      $('.catalogue').click(function(){$('.main-menu-dropdown-panel').toggle(1000);});
+
+    $("#clickable-dropdown").click(function(){
+
+            $("#mobile-nav").toggle(1000);
+
+
+    });
 
      $('.headings li').click(function(){
         var tab_id = $(this).index()+1;
