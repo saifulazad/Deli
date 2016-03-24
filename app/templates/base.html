@@ -152,7 +152,7 @@
         </div> -->
 
         <div class="mobile-tools">
-          <i class="fa fa-bars"></i>
+          <a  class="bars"><i class="fa fa-bars"></i></a>
           <a href=""><i class="fa fa-search"></i></a>
           <a href="signup"><i class="fa fa-user"></i></a>
         </div>
@@ -194,9 +194,9 @@
       <nav role="navigation" class="widescreen clearfix">
         <ul class="font-nav">
             <li class="nav-item"><a class="nav-item-link" href="#">Home</a></li>
-            <li class="dropdown"><a class="catalogue" href="#">Catalogue<span class="caret"></span></a>
-              <ul class="sub-nav catalog" style="display:none">
-                <li class="row">
+            <li class="dropdown"><a  href="#" id="clickable-dropdown">Catalogue<span class="caret"></span></a>
+
+                <li  class="row sub-nav catalog" style="display:none" id="mobile-nav">
 
                   <div class="sub-nav-item columns large-3">
                     <a href=""><h3 class="title"><span>Collections</span></h3></a>
@@ -221,7 +221,7 @@
                     </ul>
                   </div>
                 </li>
-              </ul>
+              
             </li>
             <li class="nav-item"><a class="nav-item-link" href="#">Blog</a></li>
           </ul>
@@ -327,7 +327,7 @@
   </footer>
 
 		<!-- Latest compiled and minified JavaScript -->
-    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="../static/js/jquery-2.1.4.min.js"></script>
 	<script src="../static/js/bootstrap.min.js"></script>
     <script src="../static/js/owl.carousel.min.js"></script>
     <script src="../static/js/externaljs.js"></script>
