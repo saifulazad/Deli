@@ -478,7 +478,7 @@ button:hover, .button:hover, a.button:hover {
 
 .main-header .bottom-row .menu-container {
     display: none;
-    padding: 0 120px 0 15px;
+    padding: 0 0px 0 15px;
 }
 
 @media only screen and (min-width: 768px){.main-header .bottom-row .menu-container {
@@ -529,7 +529,7 @@ button:hover, .button:hover, a.button:hover {
 
 .main-header .bottom-row .menu-container {
     display: none;
-    padding: 0 120px 0 15px;
+    padding: 0 0px 0 15px;
 }
 
 @media only screen and (min-width: 768px){.main-header .bottom-row .menu-container {
