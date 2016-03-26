@@ -28,8 +28,8 @@
   </header>
 
   <article class="row">
-    <div class="positions">
-      <div class="col-sm-12 col-md-6 col-lg-4">
+
+      <div class="col-sm-6 col-md-6 col-lg-6">
 
         <div data-position="title-vendor">
           <h1 class="page-title" itemprop="name">Long grain white rice</h1>
@@ -48,36 +48,9 @@
           </div>
         </div>
 
-        <div data-position="cart-form">
+        <div class="hidden-xs">
           <form class="cart-form custom" action="" method="post">
-            <div class="variants hidden">
 
-              <div class="selector-wrapper">
-                <label for="variant-listbox-option-0">Size</label>
-                <select class="single-option-selector" data-option="option1" id="variant-listbox-option-0">
-                  <option value="small">small</option>
-                </select>
-              </div>
-
-              <div class="selector-wrapper">
-                <label for="variant-listbox-option-1">Material</label>
-                <select class="single-option-selector" data-option="option2" id="variant-listbox-option-1">
-                  <option value="Packet">Packet</option>
-                </select>
-              </div>
-
-              <select id="variant-listbox" name="id" class="medium hidden-field" data-id="1450630510077-Dh0dt" style="display: none;">
-                <option data-sku="" selected="selected" value="393795832">small / Packet - $12.95</option>
-              </select>
-
-              <div class="custom dropdown medium" data-id="1450630510077-Dh0dt" style="display: none;">
-                <a href="#" class="current">small / Packet - $12.95</a>
-                <a href="#" class="selector"></a>
-                <ul>
-                  <li class="selected">small / Packet - $12.95</li>
-                </ul>
-              </div>
-            </div>
 
             <div class="quanity-cart-row clearfix">
 
@@ -92,9 +65,7 @@
             </div>
           </form>
 
-          <div class="product-unavailable" style="display: none;">
-            <p class="error">This product is currently sold out.</p>
-          </div>
+
         </div>
 
         <div data-position="thumbs">
@@ -103,18 +74,38 @@
         </div>
       </div>
 
-      <div class="col-sm-12 col-md-6 col-lg-4">
+      <div class="col-sm-6 col-md-6 col-lg-6">
         <div data-position="photos">
           <div class="photos">
             <div class="container clearfix" style="height: auto; width: auto; position: relative; overflow: hidden; outline-width: 0px;">
               <a class="photo active" href="" data-zoom="" rel="gallery" data-image-id="346382162" style="display: inline;">
-                <img src="../static/assets/1.jpeg" class="two" alt="Long grain white rice">
+                <img src="../static/assets/longgrainrice_medium.jpeg"  alt="Long grain white rice">
               </a>
               <!-- <img src="assets/products.jpeg" class="zoomImg" style="position: absolute; top: -114.519px; left: -16.3715px; opacity: 0; width: 1024px; height: 1024px; border: none; max-width: none;"> -->
             </div>
           </div>
         </div>
       </div>
+
+      <div class="visible-xs col-sm-6 col-md-6 col-lg-6">
+          <form class="cart-form custom" action="" method="post">
+
+
+            <div class="quanity-cart-row clearfix">
+
+              <div class="quantity">
+                <label for="quantity">Quantity</label>
+                <input id="quantity" type="number" name="quantity" min="1" value="1">
+              </div>
+
+              <div class="add-to-cart">
+                <input type="submit" name="add" id="add" value="Add to Cart" class="purchase button">
+              </div>
+            </div>
+          </form>
+
+
+        </div>
 
       <div class="col-sm-12 col-md-6 col-lg-4">
         <div data-position="description">
