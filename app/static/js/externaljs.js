@@ -16,9 +16,9 @@ $(document).ready(function() {
 
     $("#owl-demo2").owlCarousel({
       items : 3,
-      mouseDrag: true
-      //itemsDesktop : [1199,3],
-      //itemsDesktopSmall : [979,3]
+      mouseDrag: true,
+      itemsDesktop : [1299,4],
+      itemsDesktopSmall : [979,4]
  
     });
 

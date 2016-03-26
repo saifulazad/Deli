@@ -1,7 +1,19 @@
 from flask import render_template, request
 from wtforms.ext.sqlalchemy.orm import model_form
-from app import app
+from app import app ,api
 from  app import models
+
+
+from flask_restful import Resource
+
+
+
+
+class HelloWorld(Resource):
+    def get(self):
+        return {'hello': 'world'}
+
+api.add_resource(HelloWorld, '/hi')
 
 
 @app.route('/')
