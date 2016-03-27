@@ -23,28 +23,59 @@ $(document).ready(function() {
     });
 
 
-    $(".searchbar-open").click(function(){
-          $(".menu").hide();
-          //$(".searchbar").css({"display","none"});
-          $(".searchbar-container").show(1000);
+    // $(".searchbar-open").click(function(){
+    //       $(".menu").hide();
+    //       //$(".searchbar").css({"display","none"});
+    //       $(".searchbar-container").show(1000);
           
-    });
+    // });
 
 
-     $(".glyphicon-remove").click(function(){
-          $(".menu").show();
-          //$(".searchbar").css({"display","none"});
-          $(".searchbar-container").hide();
-          $(".account-container").hide();
+    //  $(".glyphicon-remove").click(function(){
+    //       $(".menu").show();
+    //       //$(".searchbar").css({"display","none"});
+    //       $(".searchbar-container").hide();
+    //       $(".account-container").hide();
           
-    });
+    // });
 
 
-    $(".account-open").click(function(){
-          $(".menu").hide();
-         // $(".account-container").show();
+    // $(".account-open").click(function(){
+    //       $(".menu").hide();
+    //       $(".account-container").show();
           
-    });
+    // });
+
+// search account show
+
+    searchAndAccount = function() {
+      $('.searchbar-open').click(function() {
+        $(this).closest('.menu').fadeOut(100, function() {
+          $('.main-header .searchbar-container').fadeIn(200);
+          return $('.main-header .searchbar-container .search-box').focus();
+        });
+        return false;
+      });
+      $('.searchbar-close').click(function() {
+        $('.main-header .searchbar-container').fadeOut(100, function() {
+          return $('.search-account .menu').fadeIn(200);
+        });
+        return false;
+      });
+      $('.account-open').click(function() {
+        $(this).closest('.menu').fadeOut(100, function() {
+          return $('.account-container').fadeIn(200);
+        });
+        return false;
+      });
+      return $('.account-close').click(function() {
+        $('.account-container').fadeOut(100, function() {
+          return $('.search-account .menu').fadeIn(200);
+        });
+        return false;
+      });
+    };
+    searchAndAccount();
 
     $(".bars").click(function(){
 

@@ -47,28 +47,44 @@
       </div>
 
 
-      <div class="search-account columns">
+         <div class="search-account columns">
         <div class="menu">
-          <a class="searchbar-open" href="#">Search<span aria-hidden="false" class="glyphicon glyphicon-search
-          	"></span></a>
-          <a class="account-open" href="#">Account<span aria-hidden="true" class="glyphicon glyphicon-user">
-          	</span></a>
+          <a class="searchbar-open" href="#">Search<span aria-hidden="false" class="glyph search"></span></a>
+          <a class="account-open" href="#">Account<span aria-hidden="true" class="glyph account"></span></a>
         </div>
 
-        <div class="searchbar-container" style="display:none">
+        <div class="searchbar-container" style="display: none;">
           <form action="/search" method="get" role="search">
-            <input type="text" placeholder="Search store..." class="search-box hint text">       
+            <input name="q" type="text" placeholder="Search store..." class="search-box hint text">
+            <button class="glyph search"></button>
           </form>
-          <a href="#"><span class="glyphicon glyphicon-remove"></span></a>
+          <a href="#" aria-hidden="true" class="searchbar-close glyph cross"></a>
         </div>
 
-        <div class="account-container" >
-          <a href="login">Log in</a> or <a href="signup" id="
-            customer_register_link">Sign up</a>
-          <a href="#"><span class="glyphicon glyphicon-remove"></span></a>
+        <div class="account-container" style="display: none;">
+          <a href="login" id="customer_login_link">Log in</a> or <a href="signup" id="customer_register_link">Sign up</a>
+          <a href="#" aria-hidden="true" class="account-close glyph cross"></a>
         </div>
       </div>
     </div>
+
+      <!-- <div class="search-account columns">
+        <div class="menu" >
+          <a class="searchbar-open" href="#">Search<span aria-hidden="true" class="glyph search"></span></a>
+          <a class="account-open" href="#">Account<span aria-hidden="true" class="glyph account"></span></a>   
+        </div>
+        <div class="searchbar-container" style="display: none;">
+          <form action="/search" method="get" role="search">
+            <input name="q" type="text" placeholder="Search store..." class="search-box hint text">
+            <button class="glyph search"></button>
+          </form>
+          <a href="#" aria-hidden="true" class="searchbar-close glyph cross"></a>
+        </div>
+        <div class="account-container" style="display: none;">
+        <a href="/account/login" id="customer_login_link">Log in</a> or <a href="/account/register" id="customer_register_link">Sign up</a>
+        <a href="#" aria-hidden="true" class="account-close glyph cross"></a>
+      </div>
+    </div> -->
 
     <div class="bottom-row">
       <div class="row">
@@ -180,7 +196,6 @@
           <a href=""><i class="fa fa-search"></i></a>
           <a href="/"><i class="fa fa-user"></i></a>
           <a href="/"><i class="fa fa-shopping-cart"></i></a>
-
         </div>
 
 
