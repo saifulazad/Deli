@@ -1,2 +1,2 @@
 var test = 'This is the first line';
-var test = 'This is the second line';
+var test2 = 'This is the second line';
